@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPageBk"
+    android:paddingTop="20dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/lightBtn"
+        android:textAlignment="center"
+        android:layout_marginRight="20dp"
+        android:padding="30dp"
+        android:layout_width="wrap_content"
+        android:background="@color/colorBtnInAct"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/ic_highlight_black_24dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:id="@+id/lightText"
+            android:textColor="#fff"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:background="@color/colorBtnInAct"
+        android:orientation="vertical"
+        android:id="@+id/fanBtn"
+        android:padding="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/ic_camera_black_24dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:id="@+id/fanText"
+            android:textColor="#fff"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/deviceList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>
